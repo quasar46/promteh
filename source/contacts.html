@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <!--левый блок в шапке-->
+      <!--логотип-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Логотип" width="205" height="43">
+        </a>
+      </div>
+      <div class="title-head">
+        <h1>Стройматериалы и водоснабжение <i class="br"></i> для вашего дома и квартиры</h1>
+      </div>
+      <!--правый блок в шапке-->
+      <!--контакты-->
+      <div class="contacts">
+        <div class="contacts__top">
+          <!--город-->
+          <div class="contacts__city">
+            <svg width="22" height="22" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+              <g transform="matrix(1,0,0,1,-1134.91,-37.0737)">
+                <g transform="matrix(1,0,0,1,-139.881,-17.6643)">
+                  <g id="locating" transform="matrix(1,-0,-0,1,1274.79,54.738)">
+                    <use xlink:href="#marker" x="3.75" y="0" width="14.918px" height="22.377px"
+                      transform="matrix(0.994532,0,0,0.972912,0,0)" />
+                  </g>
+                </g>
+              </g>
+              <defs>
+                <image id="marker" width="15px" height="23px"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAXCAYAAADUUxW8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVQ4jY3UMWsUQRjG8d8t16rYC7aiaQzpU0QrfbX1M2hSaqf2J6KVEWJa/QCjVRBEixQqQkAjYmNho8KhgmJEsMh7x2ayd7mnWeaZ/3+YnR22p0op5TzOYQEn8B6v8CQiHrfZXks6inu4VC/YyiNciYjhWE7xDY5PEUf5hNMRMWyyuDujKLk70CulnMFGBfzMV3iLU7iMQxVzto+LVfkdCxHxcVSUUh7YPbQjLe5Cg/lKHrRFyPGtiptvMFeVL3Wn7ucabFflsQly3W839h/WSiml3y5yvFxxG71SyiKeVRNPcQ3vcBIDLFXMYh+b+IHDrYklvJ6wfclvNhGxg/tTwK6sRsTf0Q27jd8zir+S10BEfMHajPJaRHwdy5kBdg4Q/2hdlrEcEZ+xfoC8ntxeOXMDwwniEDfbxR45Ir7lAl25nvPdcmYVW1W3peNz7pMj4h9Wqno5++lyLvDc7v8KHkbEiy6uU85cxYd8duY/lBhmQAHizXIAAAAASUVORK5CYII=" />
+              </defs>
+            </svg>
+            <p>Курск</p>
+          </div>
+          <!--телефон-->
+          <div class="contacts__phone">
+
+            <svg width="24" height="25" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+              <g transform="matrix(1,0,0,1,-1358.42,-35.6206)">
+                <g transform="matrix(1,0,0,1,-130.184,-19.1174)">
+                  <g id="telephone-handle-silhouette" transform="matrix(1,-0,-0,1,1488.61,54.738)">
+                    <use xlink:href="#phone" x="0.001" y="0" width="23.839px" height="25.283px"
+                      transform="matrix(0.993305,0,0,0.97243,0,0)" />
+                  </g>
+                </g>
+              </g>
+              <defs>
+                <image id="phone" width="24px" height="26px"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAYAAACtv5zzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwElEQVRIibXVT4gPARjG8c+upC2lDSVc/DkI7U1t60LtxuUtq2TLwRE35bQhtcoBycGRKyeFVySXDbEsJ7nJUlIiB1oh/w47Wz/T/H77Z36ey9T7PPN8552ZZjoUysw+DKMX9yNitzaooyhfh3F0N3iDEXGtNiAzu/AEm0veC/RExO86gE70V5TDJuytUz4N2N7CH8nMRf8TsB6H6wI2zpBZVRfwvoX/HCN1AWNNvMfYFhEf6wKyYv4OAxHxqU75NOA6vpfmExHxpW45dEbEZ1wtzbdmZqu3a/aA4ni+wruYmYvbAoiIcTwqeWtxti2AQifwp+QfyMydbQFExF2crshcyszuivncAIWO4UFpthKjmbmmWUlmLs/Mocxc0BIQET8xhA+lXA+eZuZARfkKPMMV3MvMDY1+R5Mr2oHbFf4vDEfEmSK3EKPoa8j8wDmcjIivlYDi5EO4UN6y0A2cwhHsaVLxGkNNAQVkFy6jq1WuhSZbAgpIr6nv1bJ5ACaq1v9HETFm6h6/mgfg4YwbTCszl+I4DmI2v9G36J81oAG0GkexX/Nn8xL9EfFmzoAG0BLswyC24Btu4SbuRMQk/AXHcYE0JJ4dZwAAAABJRU5ErkJggg==" />
+              </defs>
+            </svg>
+            <a href="tel:84712310307">+7 (4712) 31-03-07</a>
+          </div>
+        </div>
+        <!--поиск-->
+        <div class="contacts__bottom">
+          <form action="">
+            <input type="search" name="search" placeholder="поиск">
+          </form>
+        </div>
+      </div>
+      <!--соиальные сети-->
+      <div class="social">
+        <ul>
+          <li>
+            <a href="">
+              <!--инстаграм-->
+              <svg width="21" height="21" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g transform="matrix(1,0,0,1,-1663.82,-28.3221)">
+                  <g id="instagram-logo" transform="matrix(1,-0,-0,1,1663.82,28.3221)">
+                    <use xlink:href="#inst" x="0" y="0" width="21.518px" height="21.518px"
+                      transform="matrix(0.978082,0,0,0.978082,0,0)" />
+                  </g>
+                </g>
+                <defs>
+                  <image id="inst" width="22px" height="22px"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBElEQVQ4jaWVTWhdRRSAvzN38mYuRF8gocGuVHQjFbpIKRXBIJUmpiUbQborCO6KUhcJhNIgpZiNP5suFFcuBJVupFgplbgQjH3d1i6ycOGm8gK5pvDefbkzx8X9yYvta7U9MJcZ5s7HnG/unCubz7/zct+01/oycaIvbdM3bXrG0TOWvknoGUsvKftls+QmKZskBBGGIgI/AkvWa7ZGZB4zNEWb/xQGcvbBDTAPqPWanWiAjwf/OSf5oIIvAueBOWuT3PiQ7QH/P3z98i+v3AI489pvVGBjpSXYQc4TwgFIVBstFicIPAn83eVj6+VhapitnVtxoDwSfhfaN6vREWB6CPwMcKEZVQdqxQmgo+C7GFaBtVfvvBcAvn/p6wRYAlaBsQfmYMDSKoEj4KsvbH55aXjNqdunA3Dpm0PfCnBxlJ9hFV3QXUXGBZ6yg/yuD9naqIVpLD4CzlZadoB7VQZT5aadIA5oydzTG+sHxfEFTpCW3Jz643oYBT51+3RIY9HxMZDG4vP3b7150Mcw52PAx6J0rED5BHGyU2t5VKQxr7s7AGkomjkjkxZxAq4CtaQjZRZHssOzySho58UPEx+zmTTmpLHoVHpIQ4GPASMHxmjggDh+pSV9cTItjqVRYK/by16zaR+zXhrzDYBKC2koMGZyjBoOMH71p644VmgJ4mT176OzK8M77z77RvLnc2+t+Jhd8LqN12zl+J0z3XrHNdzKRIKhumB1OPlU0OOKzAtcBD2bHZ7tkCs6yGd8yMoLEvkBw2cPcI7BGWQiwUzufevjV25EnJwUx7khLQs4WZCWTNsk73nNznnNTh7a/LjZk48ZlXPK/J1BJvY7HL9yIwKf3Ft4/StFjgrMVF9LR2Bj6vfr3fu9Z01tsXvpm3+/1zgHrlbtoeF1m0oRlr1yszj47m3II7odiFu76F+76FaB5gq5ojkwULTu54oOlCI4+tKmH7PFqnBFS/mPmqcs0OdrLfsOdKtoLlFdTx5SuMBwzVJWKgXmqAvl48MjcI3I8j+Ln2Zp34K5VwAAAABJRU5ErkJggg==" />
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <!--фэйсбук-->
+              <svg width="21" height="21" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g transform="matrix(1,0,0,1,-1663.82,-66.7516)">
+                  <g id="facebook-logo--1-" serif:id="facebook-logo (1)" transform="matrix(1,-0,-0,1,1663.82,66.7516)">
+                    <use xlink:href="#fb" x="0" y="0" width="21.518px" height="21.518px"
+                      transform="matrix(0.978082,0,0,0.978082,0,0)" />
+                  </g>
+                </g>
+                <defs>
+                  <image id="fb" width="22px" height="22px"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABIklEQVQ4je2VsU7DMBRFT4OlLkhFCIZ2rcTWgdmClXbgAyxV6pq9Q/sHCJYOLP6D7ExhYcuExMIXVKpU9Q9QkZIOsVWrNJDUzcadrq+fb5znZ7+GVLoHPAJ3QIAfUuAVmAhjOvA0tAiMVybId1oVa+AZeANWRrsBZob3BdV//wu4TaLw3RWl0h1nGByS04dd030QBxjHlkilL4ERcApc+RovHD4GJvuCfMvrvGii7I6/gU/D144+Bz4MbwFdO9GQSmcljJdJFHZ+C5BK3wMvduybikLUZlw2FSnbG3adROEKQCr9BAyN3sQ5zLKHFwBtw08c/czRfyyoBf/G9RsL8lKq8oGeVNpWwkVBTCrIe1SV1hT/HUIsyJ+9DOhznGYaA9MNFzo3Gxx+UeQAAAAASUVORK5CYII=" />
+                </defs>
+              </svg>
+
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <!--вк-->
+              <svg width="21" height="21" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g transform="matrix(1,0,0,1,-1663.82,-104.333)">
+                  <g id="vk-куб" serif:id="vk куб" transform="matrix(1,-0,-0,1,1663.82,104.333)">
+                    <use xlink:href="#vk" x="0" y="0" width="21.518px" height="21.518px"
+                      transform="matrix(0.978082,0,0,0.978082,0,0)" />
+                  </g>
+                </g>
+                <defs>
+                  <image id="vk" width="22px" height="22px"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABlklEQVQ4jdWUzyuEQRjHP/vSKkpqOXBCuXD2Hyg1B225zMlhxWEPfpRGlIuUmgNHkd2bzE1JE8kF7UFRytkfIEU5iOR1MK8G79rdevfge3q+33feT/POPO+TEspsAzkgRTIKgWKQMBTHygUJQ7/gQR2gANQN3FjFmhfgztUNQFet4BHg0dWjwLSrs1bLw2iRUGYPyDp7C+SBJ+czwD58P4oWq+WZ1fIMmAUuXV4QyvgXfOPVy1bLI6tlyWpZ4rPV+AleFco0AVgtQ2De5V3EH9kVsON9SRpYiwN3AzORsVqeAMfO+uAQeANyVss3L18B+uLAAItCmQ7PjwNbVstnLzsCpqyW195uBTDng1JCmZDv2rBa5qlBQpkLYNDP4vp4UijTXwsYWAfeK4EbgAOhTO8fO2z1vdVyF5igTFf46gHOhTIDMdBh4EEoM/YDXgSWKoEBOoFTocySUKbby4fcewWhzIJQpt17thkVcZdXTq98/mGZmPze1c1AG1Q3KyKlY6BR/mt+/L+xGeC1SIIKA6CQMDwECh9apXA+AMei/gAAAABJRU5ErkJggg==" />
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--акции-->
+      <div class="stocks">
+        <a href="sales.html">Акции</a>
+      </div>
+      <!--burger-->
+      <button class="burger" hidden>
+        <img src="img/burger.svg" alt="Меню" width="41" height="34">
+      </button>
+    </div>
+  </header>
+  <div class="title-head on-mobile">
+    <h1>Стройматериалы и водоснабжение для вашего дома и квартиры</h1>
+  </div>
+  <main>
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="about.html">О компании</a>
+        </li>
+        <li>
+          <a href="facades.html">Продукция и услуги</a>
+        </li>
+        <li>
+          <a href="developing.html">Каталог</a>
+        </li>
+        <li>
+          <a href="index.html">Портфолио</a>
+        </li>
+        <li>
+          <a href="article.html">Статьи</a>
+        </li>
+        <li>
+          <a href="index.html">Клиентам</a>
+        </li>
+        <li>
+          <a href="projects.html">Проекты</a>
+        </li>
+        <li class="active">
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <div class="wrapper">
+        <div class="container">
+          <div class="contacts-page">
+            <h2 class="title">Контакты</h2>
+            <div class="contacts-wrapper">
+              <div class="contacts__left">
+                <div class="change change--citys">
+                  <button class="active">
+                    <span class="change__number">01</span>
+                    <span class="change__text">Курск</span>
+                  </button>
+                  <button>
+                    <span class="change__number">02</span>
+                    <span class="change__text">Белгород</span>
+                  </button>
+                </div>
+                <div class="show-block active">
+                  <div class="link-contact">
+                    <span>Телефон:</span>
+                    <a href="tel:84712310307" class="link-contact__text">+7 (4712) 31-03-07</a>
+                  </div>
+                  <div class="link-contact">
+                    <span>Адрес:</span>
+                    <p class="link-contact__text">ул. Косухина, 51 («Стройгигант» на Косухина)</p>
+                  </div>
+                  <div class="container-picture">
+                    <div class="item">
+                      <img src="img/mini-photo1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/mini-photo2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/mini-photo3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="map">
+                    <div style="position:relative;overflow:hidden;"><iframe
+                        src="https://yandex.ru/map-widget/v1/-/CKeF7K6l" width="100%" height="350" frameborder="0"
+                        allowfullscreen="true" style="position:relative;"></iframe></div>
+
+                  </div>
+                </div>
+                <div class="show-block">
+                  <div class="link-contact">
+                    <span>Телефон:</span>
+                    <a href="tel:84712310307" class="link-contact__text">+7 (4712) 31-03-07</a>
+                  </div>
+                  <div class="link-contact">
+                    <span>Адрес:</span>
+                    <p class="link-contact__text">Белгород</p>
+                  </div>
+                  <div class="container-picture">
+                    <div class="item">
+                      <img src="img/mini-photo1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/mini-photo2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/mini-photo3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="map">
+                    <div style="position:relative;overflow:hidden;"><iframe
+                        src="https://yandex.ru/map-widget/v1/-/CKeF7K6l" width="100%" height="350" frameborder="0"
+                        allowfullscreen="true" style="position:relative;"></iframe></div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__right">
+                <!--контактные лица-->
+                <div class="contacts__face">
+                  <h2>
+                    Контактные лица:
+                  </h2>
+                  <ul>
+                    <li>
+                      <span>Руководитель направления "Фасад".</span>
+                      <span>Чернов Юрий - тел: +7 (904) 520-20-26</span>
+                    </li>
+                    <li>
+                      <span>Руководитель направления "Гидро".</span>
+                      <span>Кузиков Александр - тел: +7 (920) 263-91-20</span>
+                    </li>
+                  </ul>
+                </div>
+                <!--реквизиты-->
+                <div class="contacts__requisites">
+                  <h2>
+                    Реквизиты:
+                  </h2>
+                  <ul>
+                    <li>ИП Кузиков Александр Викторович</li>
+                    <li>Юр. адрес: 305040, г. Курск, ул. Студенческая д.7 кв.192</li>
+                    <li>Почт. адрес: 305040, г. Курск, ул. Студенческая д.7 кв.192</li>
+                    <li>ИНН 463225860585</li>
+                    <li>ОГРННИП 309463220500114</li>
+                    <li>Р/с № 40802810119100001490</li>
+                    <li>К/с № 30101810000000000201</li>
+                    <li>Банк: в ОАО АКБ «Авангард» г. Москва</li>
+                    <li>БИК 044525201</li>
+                    <li>Телефон: +7(4712) 31-03-07</li>
+                    <li>E-mail: kamen6814@yandex.ru</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-btns">
+              <button class="contacts-btns__btn accordion">Контактные лица</button>
+              <div class="panel">
+                <!--контактные лица-->
+                <div class="contacts__face">
+                  <ul>
+                    <li>
+                      <span>Руководитель направления "Фасад".</span>
+                      <span>Чернов Юрий - тел: +7 (904) 520-20-26</span>
+                    </li>
+                    <li>
+                      <span>Руководитель направления "Гидро".</span>
+                      <span>Кузиков Александр - тел: +7 (920) 263-91-20</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="contacts-btns__btn accordion">Реквизиты</button>
+              <div class="panel">
+                <!--реквизиты-->
+                <div class="contacts__requisites">
+                  <ul>
+                    <li>ИП Кузиков Александр Викторович</li>
+                    <li>Юр. адрес: 305040, г. Курск, ул. Студенческая д.7 кв.192</li>
+                    <li>Почт. адрес: 305040, г. Курск, ул. Студенческая д.7 кв.192</li>
+                    <li>ИНН 463225860585</li>
+                    <li>ОГРННИП 309463220500114</li>
+                    <li>Р/с № 40802810119100001490</li>
+                    <li>К/с № 30101810000000000201</li>
+                    <li>Банк: в ОАО АКБ «Авангард» г. Москва</li>
+                    <li>БИК 044525201</li>
+                    <li>Телефон: +7(4712) 31-03-07</li>
+                    <li>E-mail: kamen6814@yandex.ru</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="mobile-menu" hidden>
+    <button class="mobile-menu__close">
+      <div></div>
+      <div></div>
+    </button>
+    <ul>
+      <li class="active">
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="about.html">О компании</a>
+      </li>
+      <li>
+        <a href="facades.html">Продукция и услуги</a>
+      </li>
+      <li>
+        <a href="developing.html">Каталог</a>
+      </li>
+      <li>
+        <a href="index.html">Портфолио</a>
+      </li>
+      <li>
+        <a href="article.html">Статьи</a>
+      </li>
+      <li>
+        <a href="index.html">Клиентам</a>
+      </li>
+      <li>
+        <a href="projects.html">Проекты</a>
+      </li>
+      <li>
+        <a href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </div>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+  <!-- <script src="js/placemark.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

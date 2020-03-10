@@ -1,0 +1,50 @@
+.mobile-menu.active {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $green;
+
+  ul {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    li {
+      text-align: center;
+    }
+
+    a {
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+
+  div {
+    position: relative;
+    height: 2px;
+    width: 20px;
+    background-color: white;
+
+    &:first-child {
+      transform: rotate(45deg);
+      top: 2px;
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}

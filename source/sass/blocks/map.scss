@@ -1,0 +1,12 @@
+.map {
+  max-width: 660px;
+  width: 100%;
+  height: 352px;
+  margin-bottom: 20px;
+  background-image: url('../img/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media(max-width: 768px) {
+    background-image: url('../img/map-mobile.png');
+  }
+}

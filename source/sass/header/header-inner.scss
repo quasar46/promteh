@@ -1,0 +1,12 @@
+.header-inner {
+  display: flex;
+  // height: 155px;
+  border-bottom: 1px solid $light-gray;
+  min-height: 154px;
+
+  @media(max-width: 768px) {
+    min-height: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

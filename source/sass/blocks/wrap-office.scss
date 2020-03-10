@@ -1,0 +1,44 @@
+.wrap-office {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  // padding-right: 50px;;
+
+  .slider2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .more {
+    margin-left: auto;
+    color: #b3b3b3;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    margin-right: 40px;
+  }
+
+  span {
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../img/arrow.png');
+      width: 18px;
+      height: 32px;
+      top: 50%;
+      right: -27px;
+      margin-top: -16px;
+      z-index: 111;
+    }
+  }
+
+  @media(max-width: 768px) {
+    margin-bottom: 40px;
+
+  }
+}

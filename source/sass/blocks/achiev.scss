@@ -1,0 +1,28 @@
+.achiev {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  span {
+    font-weight: 500;
+  }
+
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.achiev__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 0 1 210px;
+  line-height: 1.2;
+}
+
+.achiev__center {
+  font-size: 60px;
+  color: $green;
+}

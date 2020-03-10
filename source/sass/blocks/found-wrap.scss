@@ -1,0 +1,21 @@
+.found-wrap {
+  display: flex;
+
+  p {
+    margin: 0;
+  }
+
+  .item {
+    max-width: 600px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    @media(max-width: 768px) {
+      padding-right: 0;
+    }
+  }
+
+  @media(max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}

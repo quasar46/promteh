@@ -1,0 +1,9 @@
+.left-header {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 0 auto;
+
+  @media(max-width: 1310px) {
+    flex: 1;
+  }
+}

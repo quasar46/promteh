@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1358.42,-35.6206)">
+        <g transform="matrix(1,0,0,1,-130.184,-19.1174)">
+            <g id="telephone-handle-silhouette" transform="matrix(1,-0,-0,1,1488.61,54.738)">
+                <use xlink:href="#_Image1" x="0.001" y="0" width="23.839px" height="25.283px" transform="matrix(0.993305,0,0,0.97243,0,0)"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="24px" height="26px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAYAAACtv5zzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwElEQVRIibXVT4gPARjG8c+upC2lDSVc/DkI7U1t60LtxuUtq2TLwRE35bQhtcoBycGRKyeFVySXDbEsJ7nJUlIiB1oh/w47Wz/T/H77Z36ey9T7PPN8552ZZjoUysw+DKMX9yNitzaooyhfh3F0N3iDEXGtNiAzu/AEm0veC/RExO86gE70V5TDJuytUz4N2N7CH8nMRf8TsB6H6wI2zpBZVRfwvoX/HCN1AWNNvMfYFhEf6wKyYv4OAxHxqU75NOA6vpfmExHxpW45dEbEZ1wtzbdmZqu3a/aA4ni+wruYmYvbAoiIcTwqeWtxti2AQifwp+QfyMydbQFExF2crshcyszuivncAIWO4UFpthKjmbmmWUlmLs/Mocxc0BIQET8xhA+lXA+eZuZARfkKPMMV3MvMDY1+R5Mr2oHbFf4vDEfEmSK3EKPoa8j8wDmcjIivlYDi5EO4UN6y0A2cwhHsaVLxGkNNAQVkFy6jq1WuhSZbAgpIr6nv1bJ5ACaq1v9HETFm6h6/mgfg4YwbTCszl+I4DmI2v9G36J81oAG0GkexX/Nn8xL9EfFmzoAG0BLswyC24Btu4SbuRMQk/AXHcYE0JJ4dZwAAAABJRU5ErkJggg=="/>
+    </defs>
+</svg>

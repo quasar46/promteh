@@ -1,0 +1,28 @@
+.burger {
+  background-color: $green;
+  flex: 1 0 160px;
+  justify-content: center;
+  align-items: center;
+  border:none;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  img {
+    @media(max-width: 768px) {
+      width: 17px;
+      height: 14px;
+    }
+  }
+
+  @media(max-width: 1200px) {
+    display: flex;
+  }
+
+  @media(max-width: 768px) {
+    flex: 0 1 42px;
+  }
+}

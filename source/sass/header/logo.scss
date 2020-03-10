@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 285px;
+  border-right: 1px solid $light-gray;
+
+  a {
+    @media(max-width: 768px) {
+      margin-top: 5px;
+    }
+  }
+
+
+  @media(max-width: 1200px) {
+    flex: 1 0 285px;
+  }
+
+  @media(max-width: 768px) {
+    flex: 0 1 80px;
+    border-right: 0;
+    margin-left: 15px;
+  }
+}

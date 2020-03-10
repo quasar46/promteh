@@ -1,0 +1,22 @@
+.square-list {
+  margin-bottom: 30px;
+
+  li {
+    padding-left: 20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      left: 0;
+      top: 50%;
+      margin-top: -3.5px;
+      background-color: $blue;
+    }
+    @media(max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.accordion {
+  display: none;
+  transition: 0.4s;
+  padding: 0;
+
+  @media(max-width: 1400px) {
+    display: block;
+  }
+}
+
+.accordion:after {
+  content: '\002B';
+  color: $gray;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}

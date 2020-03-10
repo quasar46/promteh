@@ -1,0 +1,14 @@
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 815px;
+  margin-left: auto;
+
+  @media(max-width: 1310px) {
+    flex: 0;
+  }
+
+  @media(max-width: 1200px) {
+    flex: 1;
+  }
+}

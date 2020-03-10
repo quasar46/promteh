@@ -1,0 +1,105 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media(max-width: 1310px) {
+    font-size: 16px;
+  }
+
+  @media(max-width: 1023px) {
+    display: none;
+  }
+}
+
+.contacts__top {
+  display: flex;
+  // flex: 1 0 95px;
+  align-items: center;
+  border-bottom: 1px solid $light-gray;
+
+  @media(max-width: 1550px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &>div {
+    // flex: 0 1 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 100%;
+
+    @media(max-width: 1550px) {
+      width: 100%;
+      height: 50%;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.contacts__bottom {
+  display: flex;
+  height: 100%;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: $gray;
+    font-weight: 500;
+    border: none;
+    background-image: url('../img/glass.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 22px 22px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+.contacts__city {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  border-right: 1px solid $light-gray;
+  border-left: 1px solid $light-gray;
+
+  svg {
+    @media(max-width: 1310px) {
+      width: 19px;
+      height: 19px;
+    }
+  }
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid $light-gray;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $text;
+
+    @media(max-width: 1310px) {
+      font-size: 16px;
+    }
+  }
+
+  svg {
+    @media(max-width: 1310px) {
+      width: 18px;
+      height: 19px;
+    }
+  }
+
+  @media(max-width: 1550px) {
+    border-left: 1px solid $light-gray;
+  }
+}

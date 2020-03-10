@@ -1,0 +1,13 @@
+.item__title {
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.item__title.on-mobile {
+  display: none;
+
+  @media(max-width: 768px) {
+    display: block;
+  }
+}

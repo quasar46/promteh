@@ -1,0 +1,49 @@
+.developing {
+  font-size: 49px;
+  text-transform: uppercase;
+  color: $text;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+
+  img {
+    width: 121px;
+    height: 121px;
+    top: 50%;
+    position: absolute;
+    left: -70px;
+    transform: translate(-50%, -50%);
+
+    @media(max-width: 768px) {
+      width: 51px;
+      height: 51px;
+      left: 50%;
+      top: -60px;
+    }
+  }
+
+  .developing__content {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media(max-width: 1800px) {
+      white-space: normal;
+    }
+
+    @media(max-width: 768px) {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  @media(max-width: 768px) {
+    font-size: 14px;
+  }
+}

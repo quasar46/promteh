@@ -1,0 +1,51 @@
+button.owl-prev {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  display: block;
+  width: 18px;
+  height: 32px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  background-image: url('../img/arrow.png') !important;
+  background-repeat: no-repeat;
+  z-index: 100;
+
+  // &:hover {
+  //   color: $text;
+  //   text-decoration: none;
+  // }
+
+  &::after {
+    content: "еще";
+    text-transform: uppercase;
+    position: absolute;
+    right: 50px;
+    top: 0;
+
+    &:hover {
+      color: $light-gray;
+    }
+
+    @media(max-width: 768px) {
+      content: "";
+    }
+  }
+}
+
+.slider1,
+.slider2,
+.slider3,
+.slider4 {
+  padding-right: 100px;
+  @media(max-width: 768px) {
+    padding-right: 50px;
+  }
+}
+
+.owl-theme .owl-nav {
+  height: 0;
+}

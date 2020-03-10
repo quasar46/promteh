@@ -1,0 +1,112 @@
+.change {
+  display: flex;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+
+  a {
+    // flex: 0 1 242px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    text-align: left;
+    // margin-right: 20px;
+    @media(max-width: 768px) {
+      padding: 10px;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $green;
+    }
+
+    &:hover span,
+    &.active span {
+      color: white;
+    }
+  }
+
+  @media(max-width: 768px) {
+    // padding-right: 50px;
+    line-height: 1.2;
+  }
+
+  &--citys {
+    button {
+      border: none;
+      background: transparent;
+      padding: 15px;
+
+      &.active {
+        background-color: $green;
+        color: white;
+
+        .change__number {
+          color: white;
+        }
+      }
+    }
+  }
+  @media(max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.change__number {
+  color: #c0c0c0;
+  margin-bottom: 10px;
+  font-size: 29px;
+
+  @media(max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.more {
+  margin-left: auto;
+  color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-right: 30px;
+
+  span {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../img/arrow.png');
+      width: 18px;
+      height: 32px;
+      top: 50%;
+      right: -27px;
+      margin-top: -16px;
+      z-index: 111;
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.change__text {
+  text-transform: uppercase;
+  @media(max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.change__link {
+  height: 148px;
+
+  @media(max-width: 768px) {
+    height: 100px;
+  }
+}

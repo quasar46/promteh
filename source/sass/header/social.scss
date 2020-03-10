@@ -1,0 +1,24 @@
+.social {
+  flex: 0 1 100px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  @media(max-width: 1310px) {
+    flex: 1 0 63px;
+  }
+
+  @media(max-width: 1200px) {
+    flex: 0 1 63px;
+  }
+
+  @media(max-width: 1023px) {
+    display: none;
+  }
+}

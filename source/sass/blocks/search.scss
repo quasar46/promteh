@@ -1,0 +1,13 @@
+.search {
+  form {
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
+    input[type="text"] {
+      @media(max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
