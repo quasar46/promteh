@@ -1,0 +1,43 @@
+.tab {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+
+  .tablinks {
+    max-width: 237px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+    outline: nine;
+
+    &.active,
+    &:hover {
+      background-color: $green;
+      color: white;
+
+      span.number {
+        color: white;
+      }
+    }
+  }
+
+  span.number {
+    font-size: 29px;
+    font-weight: 600;
+    color: #c0c0c0;
+  }
+
+  p.text {
+    text-transform: uppercase;
+  }
+}
+
+.tabcontent {
+  display: none;
+}

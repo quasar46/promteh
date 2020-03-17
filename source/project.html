@@ -194,60 +194,269 @@
           <h2 class="title">Проект</h2>
           <p class="date">01.01.20</p>
           <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sequi!.</h3>
-          <div class="content-inner">
-            <div class="change owl-carousel slider4">
-              <a href="#" class="change__link active">
-                <span class="change__number">01</span>
-                <span class="change__text">строительство домов материалы для стройки</span>
-              </a>
-              <a class="change__link" href="#">
-                <span class="change__number">02</span>
-                <span class="change__text">Водоснабжение и ....</span>
-              </a>
-              <a class="change__link" href="#">
-                <span class="change__number">03</span>
-                <span class="change__text">Проектирование</span>
-              </a>
-              <a class="change__link" href="#">
-                <span class="change__number">04</span>
-                <span class="change__text">Ландшафтный дизайн</span>
-              </a>
-            </div>
-            <div class="wrap-content">
-              <div class="wrap-content__picture">
-                <div class="item">
-                  <img src="img/picture.jpg" alt="">
+          <div class="tab">
+            <button class="tablinks active" onclick="openProject(event, '01')">
+              <span class="number">01</span>
+              <p class="text">строительство домов материалы для стройки</p>
+            </button>
+            <button class="tablinks" onclick="openProject(event, '02')">
+              <span class="number">02</span>
+              <p class="text">строительство домов материалы для стройки</p>
+            </button>
+            <button class="tablinks" onclick="openProject(event, '03')">
+              <span class="number">03</span>
+              <p class="text">строительство домов материалы для стройки</p>
+            </button>
+            <button class="tablinks" onclick="openProject(event, '04')">
+              <span class="number">04</span>
+              <p class="text">строительство домов материалы для стройки</p>
+            </button>
+          </div>
+          <!--tabcontent-->
+          <div class="tabcontent" id="01" style="display: block">
+            <div class="content-inner">
+              <div class="change owl-carousel slider4">
+                <a href="#" class="change__link active">
+                  <span class="change__number">01</span>
+                  <span class="change__text">строительство домов материалы для стройки</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">02</span>
+                  <span class="change__text">Водоснабжение и ....</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">03</span>
+                  <span class="change__text">Проектирование</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">04</span>
+                  <span class="change__text">Ландшафтный дизайн</span>
+                </a>
+              </div>
+              <div class="wrap-content">
+                <div class="wrap-content__picture">
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
                 </div>
-                <div class="item">
-                  <img src="img/picture.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img src="img/picture.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img src="img/picture.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img src="img/picture.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img src="img/picture.jpg" alt="">
+                <div class="wrap-content__text">
+                  <p>Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Ландшафтный
+                    дизайн -
+                    это комплекс специальных мероприятий и решений по благоустройству территории, направленный на
+                    изменение
+                    внешнего вида территории путем активного использования природных компонентов. Ландшафтный дизайн
+                    способен сделать ваш сад уютным, красивым, а главное - оригинальным и неповторимым.</p>
+                  <p>Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. Ландшафтный дизайн - это комплекс специальных мероприятий и решений по благоустройству
+                    территории, направленный на изменение внешнего вида территории путем активного использования
+                    природных
+                    компонентов. Ландшафтный дизайн способен сделать ваш сад уютным, красивым, а главное - оригинальным
+                    и
+                    неповторимым. Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует
+                    предмет деятельности. Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. </p>
                 </div>
               </div>
-              <div class="wrap-content__text">
-                <p>Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Ландшафтный
-                  дизайн -
-                  это комплекс специальных мероприятий и решений по благоустройству территории, направленный на
-                  изменение
-                  внешнего вида территории путем активного использования природных компонентов. Ландшафтный дизайн
-                  способен сделать ваш сад уютным, красивым, а главное - оригинальным и неповторимым.</p>
-                <p>Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует предмет
-                  деятельности. Ландшафтный дизайн - это комплекс специальных мероприятий и решений по благоустройству
-                  территории, направленный на изменение внешнего вида территории путем активного использования природных
-                  компонентов. Ландшафтный дизайн способен сделать ваш сад уютным, красивым, а главное - оригинальным и
-                  неповторимым. Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует
-                  предмет деятельности. Отсюда естественно следует, что автоматизация дискредитирует предмет
-                  деятельности. </p>
+            </div>
+          </div>
+          <!--tabcontent-->
+          <div class="tabcontent" id="02">
+            <div class="content-inner">
+              <div class="change owl-carousel slider4">
+                <a href="#" class="change__link active">
+                  <span class="change__number">01</span>
+                  <span class="change__text">строительство домов материалы для стройки</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">02</span>
+                  <span class="change__text">Водоснабжение и ....</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">03</span>
+                  <span class="change__text">Проектирование</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">04</span>
+                  <span class="change__text">Ландшафтный дизайн</span>
+                </a>
+              </div>
+              <div class="wrap-content">
+                <div class="wrap-content__picture">
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                </div>
+                <div class="wrap-content__text">
+                  <p>Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Ландшафтный
+                    дизайн -
+                    это комплекс специальных мероприятий и решений по благоустройству территории, направленный на
+                    изменение
+                    внешнего вида территории путем активного использования природных компонентов. Ландшафтный дизайн
+                    способен сделать ваш сад уютным, красивым, а главное - оригинальным и неповторимым.</p>
+                  <p>Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. Ландшафтный дизайн - это комплекс специальных мероприятий и решений по благоустройству
+                    территории, направленный на изменение внешнего вида территории путем активного использования
+                    природных
+                    компонентов. Ландшафтный дизайн способен сделать ваш сад уютным, красивым, а главное - оригинальным
+                    и
+                    неповторимым. Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует
+                    предмет деятельности. Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--tabcontent-->
+          <div class="tabcontent" id="03">
+            <div class="content-inner">
+              <div class="change owl-carousel slider4">
+                <a href="#" class="change__link active">
+                  <span class="change__number">01</span>
+                  <span class="change__text">строительство домов материалы для стройки</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">02</span>
+                  <span class="change__text">Водоснабжение и ....</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">03</span>
+                  <span class="change__text">Проектирование</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">04</span>
+                  <span class="change__text">Ландшафтный дизайн</span>
+                </a>
+              </div>
+              <div class="wrap-content">
+                <div class="wrap-content__picture">
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                </div>
+                <div class="wrap-content__text">
+                  <p>Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Ландшафтный
+                    дизайн -
+                    это комплекс специальных мероприятий и решений по благоустройству территории, направленный на
+                    изменение
+                    внешнего вида территории путем активного использования природных компонентов. Ландшафтный дизайн
+                    способен сделать ваш сад уютным, красивым, а главное - оригинальным и неповторимым.</p>
+                  <p>Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. Ландшафтный дизайн - это комплекс специальных мероприятий и решений по благоустройству
+                    территории, направленный на изменение внешнего вида территории путем активного использования
+                    природных
+                    компонентов. Ландшафтный дизайн способен сделать ваш сад уютным, красивым, а главное - оригинальным
+                    и
+                    неповторимым. Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует
+                    предмет деятельности. Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--tabcontent-->
+          <div class="tabcontent" id="04">
+            <div class="content-inner">
+              <div class="change owl-carousel slider4">
+                <a href="#" class="change__link active">
+                  <span class="change__number">01</span>
+                  <span class="change__text">строительство домов материалы для стройки</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">02</span>
+                  <span class="change__text">Водоснабжение и ....</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">03</span>
+                  <span class="change__text">Проектирование</span>
+                </a>
+                <a class="change__link" href="#">
+                  <span class="change__number">04</span>
+                  <span class="change__text">Ландшафтный дизайн</span>
+                </a>
+              </div>
+              <div class="wrap-content">
+                <div class="wrap-content__picture">
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/picture.jpg" alt="">
+                  </div>
+                </div>
+                <div class="wrap-content__text">
+                  <p>Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Ландшафтный
+                    дизайн -
+                    это комплекс специальных мероприятий и решений по благоустройству территории, направленный на
+                    изменение
+                    внешнего вида территории путем активного использования природных компонентов. Ландшафтный дизайн
+                    способен сделать ваш сад уютным, красивым, а главное - оригинальным и неповторимым.</p>
+                  <p>Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. Ландшафтный дизайн - это комплекс специальных мероприятий и решений по благоустройству
+                    территории, направленный на изменение внешнего вида территории путем активного использования
+                    природных
+                    компонентов. Ландшафтный дизайн способен сделать ваш сад уютным, красивым, а главное - оригинальным
+                    и
+                    неповторимым. Каким будет ваш участок? Отсюда естественно следует, что автоматизация дискредитирует
+                    предмет деятельности. Отсюда естественно следует, что автоматизация дискредитирует предмет
+                    деятельности. </p>
+                </div>
               </div>
             </div>
           </div>
