@@ -1,0 +1,21 @@
+.catalog-filter__top {
+  display: flex;
+  margin-bottom: 30px;
+
+  img {
+    width: 17px;
+    height: 8px;
+  }
+
+  a {
+    margin-right: 60px;
+    text-transform: uppercase;
+    display: flex;
+
+    align-items: center;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+}

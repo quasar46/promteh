@@ -1,0 +1,27 @@
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.catalog-wrapper__item {
+  width: calc(100% / 3);
+  margin-bottom: 20px;
+  padding-right: 20px;
+
+  @media(max-width: 992px) {
+    width: calc(100% / 2);
+  }
+}
+
+.catalog-wrapper__inner {
+  max-width: 310px;
+  width: 100%;
+}
+
+.catalog-wrapper__text {
+  margin-top: 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}

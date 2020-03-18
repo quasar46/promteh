@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -172,7 +175,7 @@
         <li>
           <a href="index.html">Портфолио</a>
         </li>
-        <li>
+        <li class="active">
           <a href="article.html">Статьи</a>
         </li>
         <li>
@@ -187,56 +190,277 @@
       </ul>
     </nav>
     <div class="main-content">
-      <div class="wrapper">
+      <div class="wrapper wrapper--mode">
         <div class="container">
-          <a href="#" class="link-back on-desktop">К категории ландшафтный дизайн</a>
-          <h2 class="title on-desktop">
-            Ландшафтный дизайн
-          </h2>
-          <div class="design">
-            <div class="design__left-block">
-              <div class="banner">
-                <img src="img/banner.jpg" alt="">
+          <a href="#" class="link-back link-back--mode">
+            В каталог
+          </a>
+          <div class="slider-wrapper">
+            <!--slick slider-->
+            <div class="slick-slider slick-slider-photo">
+              <div>
+                <img src="https://via.placeholder.com/470x430" alt="">
               </div>
-              <a href="#" class="link-back on-mobile">К категории ландшафтный дизайн</a>
-              <h2 class="title on-mobile">
-                Ландшафтный дизайн
-              </h2>
-              <p>
-                Компани «Промтех» помогает людям в благоустройстве дачных и приусадебных участков, создавая шедевры из
-                деревьев, цветов, кустарников, и камней. Полный комплекс услуг по проектированию, поставке и монтажу
-                водоотводных систем, рулонных газонов, систем автополива, разделение пешеходных зон и в целом
-                комплексное
-                обустройство прилегающих к дому территорий.
-              </p>
-              <h2 class="title title--mini">Наши услуги:</h2>
-              <ul class="square-list">
-                <li>Ландшафтное проектирование участка;</li>
-                <li>Озеленение и благоустройство территории;</li>
-                <li>Посадка деревьев-крупномеров и кустарников;</li>
-                <li>Обустройство инженерных систем на участке (дренаж, ландшафтное освещение, автоматический полив);
-                </li>
-                <li>Создание искусственных водоемов и фонтанных групп;</li>
-                <li>Благоустройство промышленных территорий.</li>
-              </ul>
-              <p>
-                К Вашим услугам – профессиональные консультации инженеров-проектировщиков, архитекторов, дизайнеров и
-                флористов.
-              </p>
-              <p style="color:#80BA26">
-                Наша задача - разработка и внедрение ландшафтного проекта «под ключ» с профессиональным исполнением и
-                гарантией.
-              </p>
+              <div>
+                <img src="https://via.placeholder.com/470x430" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/470x430" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/470x430" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/470x430" alt="">
+              </div>
             </div>
-            <div class="design__right-block">
-              <img src="img/sale2.jpg" alt="Скидка">
+            <!--slick slider vertical-->
+            <div class="slick-slider-vertical">
+              <div>
+                <img src="https://via.placeholder.com/100x90" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/100x90" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/100x90" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/100x90" alt="">
+              </div>
+              <div>
+                <img src="https://via.placeholder.com/100x90" alt="">
+              </div>
+            </div>
+            <div class="slider-wrapper__right">
+              <!--product slider-->
+              <div class="slider-wrapper__right-item">
+                <p class="slider-wrapper__title">
+                  Товар 1
+                </p>
+                <p class="slider-wrapper__price">
+                  <span class="cross">2 000 р</span>
+                  <span>1 000 р</span>
+                </p>
+                <ul class="slider-wrapper__specifications">
+                  <li class="slider-wrapper__item">
+                    Вес: 15615
+                  </li>
+                  <li class="slider-wrapper__item">
+                    Высота: 54545
+                  </li>
+                  <li class="slider-wrapper__item">
+                    Ширина: 45848
+                  </li>
+                  <li class="slider-wrapper__item">
+                    Материал: тут написан материал
+                  </li>
+                  <li class="slider-wrapper__item">
+                    Цвет: белый
+                  </li>
+                </ul>
+                <ul class="slider-wrapper__specifications">
+                  <li class="slider-wrapper__item">
+                    Производитель: <br> Далеко-далеко.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
+          <div class="catalog-items">
+            <h3 class="catalog-items__title">
+              Недавно просмотренные
+            </h3>
+            <!--slider-->
+            <div class="slider5 owl-carousel">
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span>1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span>1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span>1 000 ₽</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-items">
+            <h3 class="catalog-items__title">
+              Возможно Вас заинтересует
+            </h3>
+            <!--slider-->
+            <div class="slider5 owl-carousel">
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span>1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span>1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span class="old-price">2 000 ₽</span>
+                  <span class="new-price">1 000 ₽</span>
+                </p>
+              </div>
+              <!--item-->
+              <div class="slider5-item">
+                <div class="slider5-item__pic">
+                  <img src="https://via.placeholder.com/200x200" alt="">
+                </div>
+                <p class="slider5-item__text">
+                  <span>1 000 ₽</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
+  <div class="mobile-menu" hidden>
+    <button class="mobile-menu__close">
+      <div></div>
+      <div></div>
+    </button>
+    <ul>
+      <li class="active">
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="about.html">О компании</a>
+      </li>
+      <li>
+        <a href="facades.html">Продукция и услуги</a>
+      </li>
+      <li>
+        <a href="developing.html">Каталог</a>
+      </li>
+      <li>
+        <a href="index.html">Портфолио</a>
+      </li>
+      <li>
+        <a href="article.html">Статьи</a>
+      </li>
+      <li>
+        <a href="index.html">Клиентам</a>
+      </li>
+      <li>
+        <a href="projects.html">Проекты</a>
+      </li>
+      <li>
+        <a href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </div>
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

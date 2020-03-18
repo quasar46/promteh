@@ -1,0 +1,30 @@
+.slick-prev {
+  display: none !important;
+}
+
+.slick-slider-photo .slick-arrow {
+  display: none !important;
+}
+
+.slick-slider-vertical .slick-arrow {
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -14px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.slick-slider-vertical {
+  width: 100px;
+
+  div {
+    margin-bottom: 10px;
+  }
+}

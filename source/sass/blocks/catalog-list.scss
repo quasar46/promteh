@@ -1,0 +1,16 @@
+.catalog-list {
+  margin-right: 60px;
+  flex: 1 0 auto;
+}
+
+.catalog-list__item {
+  a {
+    font-weight: 600;
+  }
+  &.active,
+  &:hover {
+    a {
+      color: $green;
+    }
+  }
+}

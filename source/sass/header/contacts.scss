@@ -13,28 +13,37 @@
 
 .contacts__top {
   display: flex;
-  // flex: 1 0 95px;
   align-items: center;
   border-bottom: 1px solid $light-gray;
 
-  @media(max-width: 1550px) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   &>div {
-    // flex: 0 1 50%;
     padding: 0 20px;
     box-sizing: border-box;
     height: 100%;
 
     @media(max-width: 1550px) {
       width: 100%;
-      height: 50%;
     }
 
     svg {
       margin-right: 10px;
+    }
+  }
+
+  p {
+    @media(max-width: 1366px) {
+      font-size: 15px;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $text;
+
+    @media(max-width: 1366px) {
+      font-size: 15px;
+      white-space: nowrap;
     }
   }
 }
@@ -81,16 +90,6 @@
   display: flex;
   align-items: center;
   border-right: 1px solid $light-gray;
-
-  a {
-    display: flex;
-    align-items: center;
-    color: $text;
-
-    @media(max-width: 1310px) {
-      font-size: 16px;
-    }
-  }
 
   svg {
     @media(max-width: 1310px) {

@@ -1,9 +1,9 @@
 .pictures {
-  display: flex;
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
   margin-right: -20px;
+  display: flex;
 
   &--article {
     .item {
@@ -72,7 +72,18 @@
       margin-top: auto;
     }
   }
+
   @media(max-width: 768px) {
     margin-right: 0;
+  }
+}
+
+.pictures__inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: 50%;
+    margin-bottom: 20px;
   }
 }

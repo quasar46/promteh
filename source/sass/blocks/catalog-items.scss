@@ -1,0 +1,27 @@
+.catalog-items__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.catalog-items {
+  span {
+    font-size: 16px;
+  }
+
+  .new-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: $blue;
+  }
+
+  .old-price {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: #b3b3b3;
+  }
+}
+
+.slider5 {
+  padding-right: 200px;
+}
