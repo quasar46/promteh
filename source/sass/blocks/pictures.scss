@@ -81,6 +81,7 @@
 .pictures__inner {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
 
   .item {
     width: 50%;

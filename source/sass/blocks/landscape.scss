@@ -18,11 +18,12 @@
 
     h2 {
       margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 600;
     }
 
     ul {
       display: flex;
-      flex-wrap: wrap;
       padding-left: 50px;
     }
 
@@ -36,9 +37,14 @@
       span {
         font-size: 16px;
       }
+
       @media(max-width: 1500px) {
-        width: calc(100% / 3);
+        width: calc(100% / 5);
         margin-bottom: 50px;
+      }
+
+      @media(max-width: 1366px) {
+        padding-right: 40px;
       }
     }
 
@@ -48,6 +54,10 @@
       color: $green;
       top: -40px;
       left: -20px;
+
+      @media(max-width: 1366px) {
+        font-size: 21px;
+      }
     }
   }
 
@@ -62,12 +72,17 @@
 
   h2.title {
     margin-bottom: 0;
+
+    @media(max-width: 1366px) {
+      font-size: 22px;
+    }
   }
 }
 
 .landscape__left {
   background-color: white;
   flex: 0 1 1080px;
+  max-width: 70%;
 }
 
 .landscape__right {
@@ -86,6 +101,9 @@
     &:hover,
     &.active {
       border-bottom: 2px solid white;
+    }
+    @media(max-width: 1366px) {
+      font-size: 15px;
     }
   }
 }

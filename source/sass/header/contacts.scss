@@ -40,10 +40,10 @@
     display: flex;
     align-items: center;
     color: $text;
+    white-space: nowrap;
 
     @media(max-width: 1366px) {
       font-size: 15px;
-      white-space: nowrap;
     }
   }
 }

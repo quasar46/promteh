@@ -31,6 +31,10 @@
     }
   }
 
+  @media(max-width: 1366px) {
+    flex: 0 1 195px;
+  }
+
   @media(max-width: 1199px) {
     display: none;
   }
