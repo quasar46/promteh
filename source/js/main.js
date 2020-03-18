@@ -189,3 +189,5 @@ $(window).on('resize', function () {
   var height = $(window).height() - heightHeader - 1;
   $('.home .pictures').css('height', height + 'px');
 }).trigger('resize');
+
+var slickActive = document.querySelector('.slick-active')
