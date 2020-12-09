@@ -4,36 +4,66 @@ button.owl-prev {
 
 .owl-carousel .owl-nav button.owl-next {
   display: block;
-  width: 18px;
-  height: 32px;
+  width: 11px;
+  height: 19px;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  margin-top: -40px;
   position: absolute;
-  background-image: url('../img/arrow.png') !important;
+  background-image: url("../img/arrow-next.svg") !important;
   background-repeat: no-repeat;
   z-index: 100;
   outline: none;
+  @media (max-width: 768px) {
+    margin-top: -10px;
+  }
+}
 
-  // &:hover {
-  //   color: $text;
-  //   text-decoration: none;
-  // }
-
+.owl-nav {
+  height: 100%;
+  width: 20px;
+  top: 0;
+  right: 100px;
+  position: absolute;
   &::after {
     content: "еще";
     text-transform: uppercase;
     position: absolute;
-    right: 50px;
-    top: 0;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -10px;
+    color: #b3b3b3;
 
     &:hover {
       color: $light-gray;
     }
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       content: "";
     }
+  }
+  @media (max-width: 768px) {
+    right: 0;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  display: block;
+  width: 11px;
+  height: 19px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-top: 20px;
+  position: absolute;
+  background-image: url("../img/arrow-prev.svg") !important;
+  background-repeat: no-repeat;
+  z-index: 100;
+  outline: none;
+  @media (max-width: 768px) {
+    margin-top: 10px;
   }
 }
 
@@ -41,9 +71,9 @@ button.owl-prev {
 .slider2,
 .slider3,
 .slider4 {
-  padding-right: 100px;
+  padding-right: 200px;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     padding-right: 50px;
   }
 }

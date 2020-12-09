@@ -1,0 +1,99 @@
+.popup.active {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(235, 235, 235, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    .popup__content {
+        position: fixed;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%);
+        padding: 50px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px #ccc;
+        ul {
+            display: flex;
+            flex-direction: column;
+            input[type="submit"] {
+                align-self: center;
+                padding: 0 25px;
+                font-size: 15px;
+                color: #ffffff;
+                font-weight: 700;
+                line-height: 43px;
+                background-color: $green;
+                text-transform: uppercase;
+                width: auto;
+            }
+        }
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #4d4d4d;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        li {
+            border-bottom: 2px solid #e5e5e5;
+            margin-bottom: 30px;
+            &.check {
+                display: flex;
+                border-bottom: 0;
+            }
+            label[for="check"] {
+                position: relative;
+                padding-left: 35px;
+                font-size: 15px;
+                color: #4d4d4d;
+                a {
+                    color: $green;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 21px;
+                    height: 25px;
+                    border: 2px solid #e6e6e6;
+                }
+            }
+        }
+        input {
+            font-size: 15px;
+            color: #adadad;
+            border: none;
+            width: 100%;
+            outline: none;
+            padding: 0 10px;
+            &[type="checkbox"] {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                &:checked + label {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 21px;
+                        height: 25px;
+                        border: 2px solid #e6e6e6;
+                        background-image: url("../img/check.svg");
+                        background-size: 14px 17px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

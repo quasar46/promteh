@@ -158,6 +158,22 @@
     <h1>Стройматериалы и водоснабжение для вашего дома и квартиры</h1>
   </div>
   <main>
+    <div class="popup" hidden>
+      <div class="popup__content">
+        <h2 class="title">закажите Обратный звонок</h2>
+        <form action="get">
+          <ul>
+            <li><input type="text" placeholder="Обращение (Фамилия Имя)"></li>
+            <li><input type="text" placeholder="Номер мобильного телефона"></li>
+            <li class="check">
+              <input type="checkbox" id="check">
+              <label for="check">Я даю согласие на обработку <a href="">персональных данных</a></label>
+            </li>
+            <input type="submit" value="Заказать">
+          </ul>
+        </form>
+      </div>
+    </div>
     <nav class="main-nav">
       <ul>
         <li>
@@ -192,6 +208,7 @@
     <div class="main-content">
       <div class="wrapper wrapper--mode">
         <div class="container">
+          <button class="order-open" onclick="openPopup()">Заказать</button>
           <a href="#" class="link-back link-back--mode">
             В каталог
           </a>
